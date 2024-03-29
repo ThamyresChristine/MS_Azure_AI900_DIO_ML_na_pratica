@@ -1,0 +1,32 @@
+{
+    "Inputs": {
+      "data": [
+        {
+          "Patient Id": "example_value",
+          "Age": 0,
+          "Gender": 0,
+          "Air Pollution": 0,
+          "Alcohol use": 0,
+          "Dust Allergy": 0,
+          "OccuPational Hazards": 0,
+          "Genetic Risk": 0,
+          "chronic Lung Disease": 0,
+          "Balanced Diet": 0,
+          "Obesity": 0,
+          "Smoking": 0,
+          "Passive Smoker": 0,
+          "Chest Pain": 0,
+          "Coughing of Blood": 0,
+          "Fatigue": 0,
+          "Weight Loss": 0,
+          "Shortness of Breath": 0,
+          "Wheezing": 0,
+          "Swal1ing Difficulty": 0,
+          "Clubbing of Finger Nails": 0,
+          "Frequent Cold": 0,
+          "Dry Cough": 0,
+          "Snoring": 0
+        }
+
+
+        

@@ -126,10 +126,83 @@ Como agora o conjunto de dados apresenta somente variáveis quantitativas, ele e
 ## Montando o modelo de Machine Learning Automatizado no Azure
 ---
 ### Criando o Laboratório de ML
+Após entrar em sua conta na Azure, vá em _Create a resource_, pesquise por _Azure Machine Learning_, a página te direcionará para o _Estudio_. Dentro dele, clique em _Criar um espaço de trabalho_, uma nova janela aparecerá, nela você dará um nome ao seu espaço de trabalho:
+![img1](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_01.png)
+***
+### Ao ter o espaço criado, vá para _ML automatizado_, selecione o método de treinamento (no meu caso, Regressão) e preencha as informações que o Azure pede para configurar seu modelo:
+![img2](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_02.png)
+***
+### Informe sobre o tipo de dados:
+![img3](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_03.png)
+***
+### Envie os dados para o Azure (no meu caso, do computador local):
+![img4](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_04.png)
+***
+### Ao subir o dataset para o Azure, escolha um local para armazenamento de dados:
+![img5](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_05.png)
+***
+### Ao subir o dataset para o Azure, escolha uma pasta para o upload:
+![img6](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_06.png)
+***
+### Configure o dataset, para o Azure reconhecer os dados: 
+![img7](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_07.png)
+***
+### Faça a revisão de todas as colunas:
+![img8](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_08.png)
+***
+### Faça uma última revisão de todo o dataset:
+![img9](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_09.png)
+***
+### Selecione a tarefa espeífica de Machine Learning e selecione o dataset:
+![img10](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_10.png)
+***
+### Configure a tarefa (Escolha a coluna de destino):
+![img11](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_11.png)
+***
+### Selecione a métrica primária (escolha de acordo com tarefa espeífica de Machine Learning) e os modelos:
+![img12](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_12.png)
+***
+### Configure a tarefa (máximo de avaliações e de nós, limite da pontuação métrica, tempo limite do experimento e iteração):
+![img13](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_13.png)
+***
+### Informe os parâmetros para a validação da tarefa (tipo de validação e o percentual dos dados):
+![img14](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_14.png)
+***
+### Configure os recursos computacionais:
+![img15](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_15.png)
+***
+### Faça uma última revisão e envie seu trabalho:
+![img16](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_16.png)
+***
+### Quando seu trabalho for concluído, a página estará assim:
+![img17](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_17.png)
+***
+### Clique no _nome do algoritmo_ para ver as métricas:
+![img18](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_18.png)
+***
+### Métricas:
+![img23](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_23.png)
+***
+### Gráfico da Regressão Linear:
+![img19](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_19.jpg)
+***
+### Histograma dos Resíduos (diferença entre o valor previsto e o valor observado):
+![img20](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_20.jpg)
+***
+
+
 
 ---
 ## Configurando o modelo e os Pontos de Extremidade
 ---
+### Vá para _Pontos de Extremidade_ no menu lateral esquerdo e selecione o dataset:
+![img21](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_21.png)
+***
+### Clique na aba _Testar_, confirme os dados e clique no botão _Testar_ para ver o resultado do modelo - 98% de precisão:
+![img22](https://github.com/ThamyresChristine/MS_Azure_AI900_DIO/blob/main/Prints/Img_22.png)
+***
+
+### Um olhar mais detalhado no arquivo json do teste: 
 ```
 {
   "Inputs": {
@@ -161,7 +234,7 @@ Como agora o conjunto de dados apresenta somente variáveis quantitativas, ele e
         "Snoring": 0
       }
 ```
-
+### Resultado do Teste:
 ---
 Resultado do Teste:
 ```

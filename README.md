@@ -243,3 +243,12 @@ Resultado do Teste:
 0:float0.9840139409649559
 ]
 }
+```
+
+---
+## Fontes/Links Úteis
+---
+- **Portal do Azure.** Disponível em: https://azure.microsoft.com/pt-br/ Acesso em: 20 de Março de 2024.
+- **Explore Automated Machine Learning in Azure Machine Learning.** Disponível em: https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/01-machine-learning.html Acesso em: 20 de Março de 2024.
+- **Introduction to Simple Linear Regression** Disponível em: https://www.statology.org/linear-regression/  Acesso em: 20 de Março de 2024.
+
